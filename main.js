@@ -31,7 +31,9 @@ if ('serviceWorker' in navigator) {
             .then(function(cache) {
                 cache.keys().then(function(keys) {
                     keys.forEach(function(request) {
-                        cache.delete(request);
+                        if (!request.url.includes('cache-empty.html')) {
+                            cache.delete(request);
+                        }
                     });
                 });
             });
