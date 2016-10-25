@@ -1,0 +1,16 @@
+{
+  "name": "sw-example",
+  "version": "1.0.0",
+  "description": "Example usage of Service Worker API",
+  "main": "main.js",
+  "scripts": {
+    "server": "http-server ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.9.0",
+    "json-server": "^0.8.22"
+  }
+}
